@@ -1,0 +1,210 @@
+{
+    // The following variables can be used
+    "selected_text": {
+        "prefix": [ "TM_SELECTED_TEXT", "TS_TM_SELECTED_TEXT" ],
+        "description": "The currently selected text or the empty string",
+        "scope": "json, jsonc",
+        "body": "\\$TM_SELECTED_TEXT"
+    },
+    "current_line": {
+        "prefix": [ "TM_CURRENT_LINE", "TS_TM_CURRENT_LINE" ],
+        "description": "The contents of the current line",
+        "scope": "json, jsonc",
+        "body": "\\$TM_CURRENT_LINE"
+    },
+    "current_word": {
+        "prefix": [ "TM_CURRENT_WORD", "TS_TM_CURRENT_WORD" ],
+        "description": "The contents of the word under cursor or the empty string",
+        "scope": "json, jsonc",
+        "body": "\\$TM_CURRENT_WORD"
+    },
+    "line_index": {
+        "prefix": [ "TM_LINE_INDEX", "TS_TM_LINE_INDEX" ],
+        "description": "The zero-index based line number",
+        "scope": "json, jsonc",
+        "body": "\\$TM_LINE_INDEX"
+    },
+    "line_number": {
+        "prefix": [ "TM_LINE_NUMBER", "TS_TM_LINE_NUMBER" ],
+        "description": "The one-index based line number",
+        "scope": "json, jsonc",
+        "body": "\\$TM_LINE_NUMBER"
+    },
+    "filename": {
+        "prefix": [ "TM_FILENAME", "TS_TM_FILENAME" ],
+        "description": "The filename of the current document",
+        "scope": "json, jsonc",
+        "body": "\\$TM_FILENAME"
+    },
+    "filename_base": {
+        "prefix": [ "TM_FILENAME_BASE", "TS_TM_FILENAME_BASE" ],
+        "description": "The filename of the current document without its extensions",
+        "scope": "json, jsonc",
+        "body": "\\$TM_FILENAME_BASE"
+    },
+    "directory": {
+        "prefix": [ "TM_DIRECTORY", "TS_TM_DIRECTORY" ],
+        "description": "The directory of the current document",
+        "scope": "json, jsonc",
+        "body": "\\$TM_DIRECTORY"
+    },
+    "filepath": {
+        "prefix": [ "TM_FILEPATH", "TS_TM_FILEPATH" ],
+        "description": "The full file path of the current document",
+        "scope": "json, jsonc",
+        "body": "\\$TM_FILEPATH"
+    },
+    "clipboard": {
+        "prefix": [ "CLIPBOARD", "TS_CLIPBOARD" ],
+        "description": "The contents of your clipboard",
+        "scope": "json, jsonc",
+        "body": "\\$CLIPBOARD"
+    },
+    "workspace": {
+        "prefix": [ "WORKSPACE_NAME", "TS_WORKSPACE_NAME" ],
+        "description": "The ${WORKSPACE_NAME}-project",
+        "scope": "json, jsonc",
+        "body": "\\$WORKSPACE_NAME"
+    },
+
+    // For inserting the current date and time
+    "current_year": {
+        "prefix": [ "CURRENT_YEAR", "TS_CURRENT_YEAR" ],
+        "description": "The current year",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_YEAR"
+    },
+    "current_year_short": {
+        "prefix": [ "CURRENT_YEAR_SHORT", "TS_CURRENT_YEAR_SHORT" ],
+        "description": "The current year's last two digits",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_YEAR_SHORT"
+    },
+    "current_month": {
+        "prefix": [ "CURRENT_MONTH", "TS_CURRENT_MONTH" ],
+        "description": "The month as two digits (example '02')",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_MONTH"
+    },
+    "current_month_name": {
+        "prefix": [ "CURRENT_MONTH_NAME", "TS_CURRENT_MONTH_NAME" ],
+        "description": "The full name of the month (example 'July')",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_MONTH_NAME"
+    },
+    "current_month_name_short": {
+        "prefix": [ "CURRENT_MONTH_NAME_SHORT", "TS_CURRENT_MONTH_NAME_SHORT" ],
+        "description": "The short name of the month (example 'Jul')",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_MONTH_NAME_SHORT"
+    },
+    "current_date": {
+        "prefix": [ "CURRENT_DATE", "TS_CURRENT_DATE" ],
+        "description": "The day of the month",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_DATE"
+    },
+    "current_day_name": {
+        "prefix": [ "CURRENT_DAY_NAME", "TS_CURRENT_DAY_NAME" ],
+        "description": " The name of day (example 'Monday')",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_DAY_NAME"
+    },
+    "current_day_name_short": {
+        "prefix": [ "CURRENT_DAY_NAME_SHORT", "TS_CURRENT_DAY_NAME_SHORT" ],
+        "description": "The short name of the day (example 'Mon')",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_DAY_NAME_SHORT"
+    },
+    "current_hour": {
+        "prefix": [ "CURRENT_HOUR", "TS_CURRENT_HOUR" ],
+        "description": "The current hour in 24-hour clock format",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_HOUR"
+    },
+    "current_minute": {
+        "prefix": [ "CURRENT_MINUTE", "TS_CURRENT_MINUTE" ],
+        "description": "The current minute",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_MINUTE"
+    },
+    "current_second": {
+        "prefix": [ "CURRENT_SECOND", "TS_CURRENT_SECOND" ],
+        "description": "The current second",
+        "scope": "json, jsonc",
+        "body": "\\$CURRENT_SECOND"
+    },
+
+    // For inserting line or block comments, honoring the current language
+    "block_comment_start": {
+        "prefix": [ "BLOCK_COMMENT_START", "TS_BLOCK_COMMENT_START" ],
+        "description": "Example output: in PHP /* or in HTML <!--",
+        "scope": "json, jsonc",
+        "body": "\\$BLOCK_COMMENT_START"
+    },
+    "block_comment_end": {
+        "prefix": [ "BLOCK_COMMENT_END", "TS_BLOCK_COMMENT_END" ],
+        "description": "Example output: in PHP */ or in HTML -->",
+        "scope": "json, jsonc",
+        "body": "\\$BLOCK_COMMENT_END"
+    },
+    "line_comment": {
+        "prefix": [ "LINE_COMMENT", "TS_LINE_COMMENT" ],
+        "description": "Example output: in PHP // or in HTML <!-- -->",
+        "scope": "json, jsonc",
+        "body": "\\$LINE_COMMENT"
+    },
+
+    // Own Snippets
+    "basic_snippet": {
+        "prefix": "TS_BASIC_SNIPPET",
+        "description": "Generate a basic snippet with some configuration Options",
+        "scope": "json, jsonc",
+        "body": [
+            "\"${1:Snippet_Name}\": {",
+                "\t\"prefix\": ${2|\"\",[  ]|},",
+                "\t\"description\": \"${3:description}\",",
+                "\t${4:\"scope\": \"${5:scope}\",",
+                "\t}\"body\": ${6|\"\",[  ]|}",
+            "}"
+        ]
+    },
+    "choice_snippet": {
+        "prefix": "TS_CHOICE_SNIPPET",
+        "description": "Generate a Choice placeholder with at least two selection options",
+        "scope": "json, jsonc",
+        "body": "\\${${1:1}|$2,$3${4:,}|}"
+    },
+
+    // Basic Converter
+    "replace_first_char": {
+        "prefix": "CONV_REPLACE_FIRST_CHAR",
+        "description": "Replace the first specific char with another char",
+        "scope": "json, jsonc",
+        "body": "\\${${TM_SELECTED_TEXT/[\\$]//}/[${1:\\\\\\.}]/${2:_}/}"
+    },
+    "replace_each_char": {
+        "prefix": "CONV_REPLACE_EACH_CHAR",
+        "description": "Replace the each specific char with another char",
+        "scope": "json, jsonc",
+        "body": "\\${${TM_SELECTED_TEXT/[\\$]//}/[${1:\\\\\\.}]/${2:_}/g}"
+    },
+    "uppercase_snippet": {
+        "prefix": "CONV_UPPERCASE",
+        "description": "Change to all uppercase",
+        "scope": "json, jsonc",
+        "body": "\\${${TM_SELECTED_TEXT/[\\$]//}/(.*)/\\${1:/upcase}/}"
+    },
+    "lowercase_snippet": {
+        "prefix": "CONV_LOWERCASE",
+        "description": "Change to all lowercase",
+        "scope": "json, jsonc",
+        "body": "\\${${TM_SELECTED_TEXT/[\\$]//}/(.*)/\\${1:/downcase}/}"
+    },
+    "remove_non_alphanumerics": {
+        "prefix": "CONV_REMOVE_NON_ALPHANUM",
+        "description": "Remove non-alphanumeric characters",
+        "scope": "json, jsonc",
+        "body": "\\${${TM_SELECTED_TEXT/[\\$]//}/[^0-9^a-z]//gi}"
+    }
+}

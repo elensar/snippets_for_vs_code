@@ -1,0 +1,56 @@
+{
+    "javascript_example": {
+        "prefix": "eg_js",
+        "description": "Java Script For Loop example",
+        "scope": "javascript,typescript",
+        "body": [
+            "for (const ${2:element} of ${1:array}) {",
+                "\t$0",
+            "}"
+        ]
+    },
+
+    "choice_example": {
+        "prefix": "eg_choice",
+        "description": "Choice Snippet example",
+        "body": "${1|Winter,Frühling,Sommer,Herbst|}"
+    },
+
+    "variablen_example": {
+        "prefix": "eg_variable",
+        "description": "Snippet Variablen example",
+        "body": [
+            "<$name>",
+                "\t$text",
+            "</$name>"
+        ]
+    },
+
+    "clipboard_example": {
+        "prefix": "eg_clipboard",
+        "description": "Clipboard example",
+        "body": [
+            "<Test>",
+                "\t$CLIPBOARD",
+            "</Test>"
+        ]
+    },
+
+    "placeholder_example": {
+        "prefix": "eg_placeholder",
+        "description": "Placeholder example",
+        "body": "${1:Foo ${2:Bar}} $3"
+    },
+
+    "lowercase": {
+        "prefix": "lowercase",
+        "description": "Lowercase for selected text.",
+        "body": "${TM_SELECTED_TEXT/(.*)/${1:/downcase}/}"
+    },
+
+    "uppercase": {
+        "prefix": "uppercase",
+        "description": "Uppercase for selected text.",
+        "body": "${TM_SELECTED_TEXT/(.*)/${1:/upcase}/}"
+    }
+}
