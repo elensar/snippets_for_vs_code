@@ -1,20 +1,20 @@
-# Hilfe zur selbst Hilfe (Gute Seiten für einen Überblick und zum Vertiefen)
+# Help to help yourself (good pages for an overview and to deepen)
 
-Unter [drafts](./../drafts/) liegen ein paar hilfreiche Snippets, die beim Erstellen eigener Snippets hilfreich sind und können als Vorlagen verwendet werden können.
+Under [drafts](./../drafts/) there are a few helpful snippets which are helpful when creating your own snippets and can be used as templates.
 
-## Seiten
-- [User defined snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)  
-  Offizielle VS Code Snippet Dokumentation
-- [Snippet Generator](https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode)  
-  Generiert Snippets für VS Code, Atom und Sublime Text
+## Sides
+  - [User defined snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)  
+    Official VS Code Snippet Documentation
+  - [Snippet Generator](https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode)  
+    Generates snippets for VS Code, Atom and Sublime Text
 
-## Tipps
-Innerhalb von Quotes (einfache oder doppelte) funktioniert die Autovervollständigung der Snippets nicht. Dafür kann das Command `showSnippets` via Key Binding aufgerufen werden.  
+## Tips
+Within quotes (single or double) the auto-completion of snippets does not work. Therefore the command `showSnippets` can be called via Key Binding.  
 ```json
 { "key": "ctrl+alt+s", "command": "editor.action.showSnippets" }
 ```
 
-Snippets können auch über Shortcuts aufgerufen werden.  
+Snippets can also be called via shortcuts.  
 ```json
 {
   "key": "ctrl+k 1",

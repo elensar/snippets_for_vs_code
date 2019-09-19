@@ -1,12 +1,12 @@
-# Wie könnte man Snippets in Projekte integrieren?
+# How could snippets be integrated into projects?
 
-Grundsätzlich ist die Idee, dass jeder Snippets individuell für sich selber und seine Bedürfnisse anlegt. Um jedoch zu vermeiden, dass man für ein Projekt seine Autovervollständigung unnötig zumüllt und damit nicht jeder in einem Projekt die Projektspezifischen Snippets nicht immer wieder kopieren muss, können diese auch im Projekt Kontext angelegt werden. Dabei ist zu beachten, dass die Projekt-Snippets im `.vscode` Ordner abgelegt werden.
+Basically, the idea is that each snippet is designed individually for itself and its needs. However, in order to avoid that you unnecessarily fill in your autocompletion for a project and that not everyone in a project has to copy the project-specific snippets again and again, they can also be created in the project context. Please note that the project snippets are stored in the `.vscode` folder.
 
-Damit nur die Snippets aus dem `.vscode` Ordner in Git hinzugefügt wird, sollte die `.gitignore` wie folgt angepasst werden:
+So that only the snippets from the `.vscode` folder are added to Git, the `.gitignore` should be modified as follows:
 
 ```git
 .vscode/*
 !.vscode/*.code-snippets
 ```
 
-Dadurch wird in Zukunft der `.vscode` Ordner nicht mehr von Git ignoriert. Allerdings jeglicher Inhalt bis auf die die `*.code-snippets` Snippets.
+This will prevent Git from ignoring the `.vscode' folder in the future. But any content except the `*.code-snippets` snippets.

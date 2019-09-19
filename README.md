@@ -1,13 +1,13 @@
 # Snippets
 
-Dieses Repo soll die Snippets und ihre Vorteile im groben vorstellen. Dabei wird vor allem auf die Vorzüge bei der Verwendung von [VS Code](https://code.visualstudio.com/) eingegangen.
+This repo is to present the snippets and their advantages in a rough way. The advantages of using [VS Code](https://code.visualstudio.com/) are explained.
 
-Es werden folgenden Fragen geklärt:
-- [Was sind die Snippets und wie sehen diese aus?](./sheets/what-are-snippets.md)
-- [Was für Arten gibt es?](./sheets/which-types-exists.md)
-- [Was kann man alles mit Snippets machen?](./sheets/what-can-snippets-do.md)
-- [Wie könnte man Snippets in Projekte integrieren?](./sheets/how-to-use-in-projects.md)
-- [Hilfe zur selbst Hilfe (Gute Seiten für einen Überblick und zum Vertiefen)](./sheets/help-to-help-yourself.md)
+The following questions will be answered:
+  - [What are the snippets and what do they look like?](./sheets/what-are-snippets.md)
+  - [What types are there?](./sheets/which-types-exists.md)
+  - [What can you do with snippets?](./sheets/what-can-snippets-do.md)
+  - [How could snippets be integrated into projects?](./sheets/how-to-use-in-projects.md)
+  - [Help to help yourself (good pages for an overview and to deepen)](./sheets/help-to-help-yourself.md)
 
-Alle Code Beispiele liegen unter [examples](./examples/).  
-Unter [drafts](./drafts/) liegen Snippets, die für die Erstellung eigener Snippets geeignet sind.
+All code examples are available at [examples](./examples/).  
+Under [drafts](./drafts/) are snippets that are suitable for creating your own snippets.

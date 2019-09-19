@@ -1,15 +1,15 @@
-# Was sind die Snippets und wie sehen diese aus?
+# What are the snippets and what do they look like?
 
-Snippets sind in erste Linie einfache Textbausteine. Im Allgemeinen besitzen sie keine oder nur sehr wenig Logik und sind vorrangig dafür gedacht sich wiederholende Textblöcke schneller zu generieren. Das spart am Ende nicht nur Zeit, sondern macht auch den Code sicherer, da seltener Code vergessen wird und auch lesbarer, da der Text immer gleich formatiert ist. Ein weiterer Vorteil der Snippets ist, dass sie in der Regel Betriebssystem unabhängig sind und somit überall verwendet werden können.
+Snippets are first and foremost simple text modules. In general, they have no or very little logic and are primarily intended to generate repeating text blocks faster. This not only saves time in the end, but also makes the code more secure, since code is rarely forgotten and also more readable, since the text is always formatted the same. Another advantage of the snippets is that they are usually operating system independent and can be used everywhere.
 
-Snippets können in VS Code in der Regel aus den folgenden drei Quellen stammen:
-- von VS Code
-- [eigene Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
-- über den [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery)
+Snippets in VS Code can usually come from the following three sources:
+  - from VS Code itself
+  - [own snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
+  - via the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery)
 
-In VS Code werden Snippets als `JSON` oder `JSONC` gespeichert. Je nach Editor wird ein anderes Format für die Snippets verwendet. Um dennoch nicht für jeden Editor alle Snippets händisch neu schreiben zu müssen, kann auch die Seite [Snippet Generator](https://snippet-generator.app/) verwendet werden.
+In VS Code, snippets are stored as `JSON` or `JSONC`. Depending on the editor, a different format is used for the snippets. To avoid having to manually rewrite all snippets for each editor, you can also use the [Snippet Generator](https://snippet-generator.app/) page.
 
-Beispiel für eine for loop:
+Example of a for loop:
 ```json
 {
   "For_Loop": {
@@ -25,13 +25,13 @@ Beispiel für eine for loop:
 }
 ```
 
-Ergebnis:
+Outcome:
 ```javascript
 for (const element of array) {
   <code>
 }
 ```
 
-Im oberen Beispiel sind zwei Besonderheiten der Snippets zu sehen.
-1. In Snippets können Platzhalter eingebaut werden, die über `$1` und `$2` angesprungen werden können. Eine Besonderheit ist hierbei, dass die Zahl nach `$` die Reihenfolge angibt. `$0` wird dabei **immer** als letztes angesprungen.
-2. Außerdem können **default** texte hinter der Zahl angeben werden. Dieser wird angezeigt wird aber beim Anspringen so selektiert, das dieser gleich überschrieben werden kann.
+The example above shows two special features of the snippets.
+  1. In snippets placeholders can be inserted, which can be jumped to via `$1` and `$2`. A special feature is that the number after `$` indicates the order. `$0` is the last number to jump to **always**.
+  2. you can also specify **default** texts after the number. This will be displayed but will be selected during the jump so that it can be overwritten immediately.

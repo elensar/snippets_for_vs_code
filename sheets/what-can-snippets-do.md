@@ -1,7 +1,7 @@
-# Was kann man alles mit Snippets machen?
+# What can you do with snippets?
 
-Es gibt vier Variante der Tabstops:
-1. (normale) [Tabstops](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_tabstops)  
+There are four types of tab stops:
+1. (normal) [Tabstops](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_tabstops)  
   `$1`, `$2`, `$0`
 2. [Placeholders](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_placeholders)  
   `${1:foo}`
@@ -10,16 +10,16 @@ Es gibt vier Variante der Tabstops:
 4. [Variables](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables)  
   `$name` oder `${name:default}`
 
-Es ist möglich die verschiedenen Arten der Tabstops zu kombinieren. Damit können z. B. kleinere Abhängigkeiten abgebildet werden.
-Beispiel:  
+It is possible to combine the different types of tabs. This allows you to map smaller dependencies, for example.
+Example:  
 `${1:Foo ${2:Bar}} $3`  
-Placholder `$2` wird nicht angesprungen, wenn der Placholder `$1` gelöscht wird. Tabstop `$3` würde jedoch trotzdem korrekt angesprungen werden.
+Placholder `$2` is not started if the Placholder `$1` is deleted. Tabstop `$3` would still be started correctly.
 
-Weiterhin ist es möglich Placeholders auch über mehrer Zeilen zu setzen. Das kann vor allem bei Datei Templates hilfreich sein.
-Beispiel:  
-[examples.code-snippets](./../examplex/examples.code-snippets) --> `placeholder_beispiel`
+It is also possible to set placeholders over several lines. This can be especially useful for file templates.
+Example:  
+[examples.code-snippets](./../examplex/examples.code-snippets) --> `placeholder_example`
 
-Wenn mehrere eigene Variablen angegeben sind, werden diese der Reihe nach angesprungen.  
-Es gibt außerdem eine Reihe von Variablen die gewisse Informationen bereitstellen. Eine Liste dieser Variablen ist unter [General Snippets](./../drafts/GeneralSnippets.code-snippets) oder auf der [Offiziellen Seite](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables) zu finden.
+If several own variables are specified, they are jumped to one after the other.  
+There are also a number of variables that provide certain information. A list of these variables can be found under [General Snippets](./../drafts/GeneralSnippets.code-snippets) or on the [Official Site](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables).
 
-**Hinweis**: Platzhalter innerhalb eines Choice sind aktuell nicht möglich.
+**Note**: Placeholders within a choice are currently not possible.
